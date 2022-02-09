@@ -65,6 +65,20 @@ public class Climber extends SubsystemBase {
 
     }
 
+    public void extend() {
+        leftClimberMotor.set(0.5);
+        rightClimberMotor.set(0.5);
+    }
+
+    public void retract() {
+        leftClimberMotor.set(-0.5);
+        rightClimberMotor.set(-0.5);
+    }
+
+    public void stop() {
+        leftClimberMotor.set(0);
+        rightClimberMotor.set(0);
+    }
     // Put methods for controlling this subsystem
     // here. Call these from Commands.
 
